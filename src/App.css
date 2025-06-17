@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+    --font-barlow: Barlow code, sans-serif;
+    --font-poppins: Poppins, sans-serif;
+    --font-montSerrat: Montserrat, sans-serif;
+
+    --color-footer: #231917;
+    --color-redTpt: #ff3132;
+    --color-destrutive: #ff0000;
+}
+
+.tudo{
+    width: 100%;
+}
+
+.Baixo {
+    box-shadow: 0px -16px 20px #ddd;
+}
+
+.fundo {
+    position: relative;
+    z-index: 5;
+}
+
+.imagem {
+    position: absolute;
+    z-index: -1;
+    background-image: url("/TPTIconWhite.png");
+    background-size: 10rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 110em;
+}
+
+/* Slider for sections*/
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.fromLeft {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    opacity: 1;
+    animation-duration: 0,5s;
+}
+
+.fromRight {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    opacity: 1;
+    animation-duration: 0,5s;
+}
+
+/* SLIDER ANIMATION FOOTER */
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+.slide-out-left {
+    animation: slideOutLeft 0.5s ease-in forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 0.5s ease-in forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(80%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-80%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-80%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(80%);
+        opacity: 0;
+    }
+}
+
+.joiaPalco {
+    position: relative;
+    z-index: 5;
+    box-shadow: inset 0 1em 1em #ff313233;
+}
+
+.joiaMan {
+    position: absolute;
+    width: 250px;
+    top: -350px;
+    right: 10%;
+}
+.joiaMan:hover {
+    height: 445px;
+    width: 260px;
+}
