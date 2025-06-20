@@ -552,6 +552,13 @@ function App() {
                         </div>
                     </div>
                 </section>
+                <section class="flex flex-col md:flex-row items-center justify-center gap-6 p-4 py-10 md:py-20 px-4 md:px-8 lg:px-16 place-self-center w-4/5 md:w-6/10">
+                    <img src={selo} alt="selo garantia 7 dias" class="w-28 h-28 md:w-32 md:h-32 object-contain" />
+                    <div class="flex flex-col text-center md:text-left">
+                        <h1 class="text-2xl md:text-3xl font-bold text-redTpt">Garantia de <b>7 Dias</b></h1>
+                        <h2 class="mt-2 text-base md:text-lg text-gray-600 leading-relaxed font-semibold">O investimento é <b class="font-semibold">SEM RISCO</b>. Você tem 07 dias para testar todas as funcionalidades do Aplicativo e só então decidir se quer ficar. Se não gostar do aplicativo, basta enviar um e-mail e solicitar <b class="font-semibold">100% de reembolso</b>. O Risco é todo nosso!</h2>
+                    </div>
+                </section>
             </main>
             <Footer />
         </section>
