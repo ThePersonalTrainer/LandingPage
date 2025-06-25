@@ -112,7 +112,7 @@ export default function Header() {
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="menu-button"
-                        tabindex="-1"
+                        tabIndex="-1"
                     >
                         <div
                             className="py-1 text-black flex flex-col  border-2"
@@ -120,7 +120,7 @@ export default function Header() {
                         >
                             <button
                                 role="menuitem"
-                                tabindex="-1"
+                                tabIndex="-1"
                                 id="menu-item-0"
                                 onClick={() => {
                                     handleScroll("Funcionalidades");
@@ -131,7 +131,7 @@ export default function Header() {
                             </button>
                             <button
                                 role="menuitem"
-                                tabindex="-1"
+                                tabIndex="-1"
                                 id="menu-item-0"
                                 onClick={() => {
                                     handleScroll("I.A");
@@ -142,7 +142,7 @@ export default function Header() {
                             </button>
                             <button
                                 role="menuitem"
-                                tabindex="-1"
+                                tabIndex="-1"
                                 id="menu-item-0"
                                 onClick={() => {
                                     handleScroll("App Personalizado");
@@ -153,7 +153,7 @@ export default function Header() {
                             </button>
                             <button
                                 role="menuitem"
-                                tabindex="-1"
+                                tabIndex="-1"
                                 id="menu-item-0"
                                 onClick={() => {
                                     handleScroll("Planos");
